@@ -36,6 +36,8 @@
 (autoload 'color-theme-subdued "color-theme-subdued" "Color Theme Subdued" t nil)
 
 (require 'darkroom-mode)
+
+;;(when window-system)
 ;;(w32-fullscreen)
 
 
