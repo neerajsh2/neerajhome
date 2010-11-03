@@ -1,0 +1,39 @@
+snippet header
+	///-----------------------------------------------------------------------
+	/// <copyright file="$1.cs" company="Microsoft">
+	///     Copyright (c) Microsoft Corp. All rights reserved.
+	/// </copyright>
+	///-----------------------------------------------------------------------
+
+	namespace ${2}
+	{
+		using System;
+		
+		///<summary>
+		/// $1 class
+		///</summary>
+		class ${1:ClassName}
+		{
+			${3}
+		}
+	}
+
+snippet summary
+	///<summary>
+	/// ${1:Summary}
+	///<summary>
+
+snippet param
+	///<param name="${1: Name}">${2}</param>$3
+
+snippet prop
+	///<summary>
+	/// $1
+	///<summary>
+	public ${2:Type} ${1:Name} {get; set;} ${3}
+
+snippet sqlparam
+	command.Parameters.Add(CreateParameter("@${1: param}", $1 ));
+
+snippet sqlcom
+	SqlCommand command = GetDbCommandForProc("${1: sproc}");

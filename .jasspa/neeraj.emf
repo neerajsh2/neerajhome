@@ -1,0 +1,154 @@
+; -!- emf -!-
+; This is part of the JASSPA MicroEmacs macro files
+; Copyright (C) 2004-2009 JASSPA (www.jasspa.com)
+; See the file me.emf for copying and conditions.
+;
+; Synopsis:    Example User template
+; Authors:     Steven Phillips & Jon Green
+;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; The default key binding for Home/End is the beginning and end
+; of the file. Remove comments to change the default binding to the 
+; end of the line ? Alternatively enable MS Friendly Keys in user-setup
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+global-bind-key beginning-of-line       "home"
+global-bind-key end-of-line             "end"
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; The command completion is the <TAB> character, if you require Ksh type
+; completion using <ESC><ESC> then uncomment the following line. <TAB> will
+; still be valid.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;ml-bind-key tab        "esc esc"
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Change the home directory on Windows and DOS.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;!if &or &seq $platform "dos" &seq $platform "win32"
+;    set-variable $home "c:/"
+;!endif
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; 'C' is the default language for .h files if you would like the default
+; to be C++ then uncomment the following lines. If you also want .c files 
+; to be C++ then add a .c extension to the string.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;add-file-hook ".h .def"  fhook-cpp 
+;
+; Last Modified <100209.1537>
+;
+; Macro to delete the whitespace, or if an a word all of the
+; word until the next word is reached.
+define-macro super-delete
+    set-variable #l0 0
+    !while &not &sin @wc " \t\n"
+        forward-char
+        set-variable #l0 &add #l0 1
+    !done
+    !repeat
+        !force forward-char
+        !if $status
+            set-variable #l0 &add #l0 1
+        !endif
+    !until &or &seq @wc "" &not &sin @wc " \t\n"
+    #l0 backward-delete-char
+    !return
+!emacro
+
+; Make a previous-buffer command.
+define-macro previous-buffer
+    &neg @# next-buffer
+!emacro
+; spotless; Perform a clean and remove any multi-blank lines.
+define-macro spotless
+    -1 clean
+!emacro
+; comment-adjust; Used for comments in electric-c mode (and the other
+; electic modes. Moves to the comment fill position, saves having to mess
+; around with comments at the end of the line.
+0 define-macro comment-adjust
+    ; delete all spaces up until the next character
+    !while &sin @wc " \t"
+        forward-delete-char
+    !done
+    ; Fill the line to the current $c-margin. We use this as
+    ; this is the only variable that tells us where the margin
+    ; should be.
+    !if &gre $window-acol 0
+        backward-char
+        !if &sin @wc " \t"
+            forward-delete-char
+            !jump -4
+        !else
+            forward-char
+        !endif
+    !endif
+    ; Now fill to the $c-margin
+    &sub $c-margin $window-acol insert-string " "
+!emacro
+; Macro to force buffer to compile buffer for C-x '
+define-macro compile-error-buffer
+    !force delete-buffer *compile*
+    change-buffer-name "*compile*"
+!emacro
+;
+; Set up the bindings.
+;
+global-bind-key super-delete            "C-delete"
+global-bind-key beginning-of-line       "home"
+global-bind-key end-of-line             "end"
+global-bind-key undo                    "f4"
+global-bind-key forward-word            "A-f"      ;Override File menu binding
+global-bind-key backward-word           "A-b"      ;Override the file browser
+global-bind-key replace-string          "A-r"      ;Override the tools binding
+!if &seq %emulate "ERROR"
+    global-bind-key comment-adjust      "esc tab"
+    global-bind-key comment-adjust      "C-insert"
+    ; Like a korn shell please.
+    ml-bind-key tab "esc esc"
+!endif
+;
+; Setup for windows and UNIX.
+;
+; Define my hilighting colour for Windows and UNIX.
+!if &equ &band $system 0x001 0
+    !if &not &seq $platform "win32"
+        ; Small bold font is better for me.
+        change-font "-*-clean-medium-r-*-*-*-130-*-*-*-*-*-*"
+    !endif
+!endif
+; Change the default diff command-line for GNU diff utility all platforms
+set-variable %diff-com "diff --context --minimal --ignore-space-change --report-identical-files --recursive"
+set-variable %gdiff-com "diff --context --ignore-space-change -w"
+; Setup for cygwin
+!if &seq $platform "win32"
+    set-variable %cygwin-path "c:/"
+    set-variable %cygwin-hilight 1
+!endif
+
+define-macro zap
+  !force set-variable #l0 @1
+  !if &not $status
+    set-variable #l0 @mc "Zap to char: "
+  !elif &sub &len #l0 1
+    ml-write "[Error: invalid argument, must be a single char]"
+    !abort
+  !endif
+  set-mark
+  !if &les @# 0
+    !force !force &abs @# search-buffer "bM" #l0
+  !else
+    !force !force &abs @# search-buffer "M" #l0
+  !endif
+  !if &not $status
+    ml-write &spr "[Search for '%s' failed]" #l0
+    !abort
+  !endif
+  kill-region
+!emacro
+
+global-bind-key zap            "A-z"
+
+; Finished
+ml-write "Configured to Neeraj's requirements"
