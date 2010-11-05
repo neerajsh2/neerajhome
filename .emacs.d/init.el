@@ -9,8 +9,10 @@
 (setq inhibit-startup-message t)
 (setq initial-scratch-message nil)
 
+(setq is-win32 (memq system-type '(windows-nt ms-dos ms-windows)))
+
 ;; Directories
-(defconst MAIN_DIR "C:/home/.emacs.d/" 
+(defconst MAIN_DIR "~/.emacs.d/" 
   "Main Directory")
 
 (defconst SITELISP_DIR "lisp/" 
@@ -22,11 +24,19 @@
 (add-to-list 'load-path dotfiles-dir)
 (add-to-list 'load-path "~/.emacs.d")
 (add-to-list 'load-path "~/.emacs.d/emms-latest/lisp/")
-(add-to-list 'exec-path "C:/Program Files (x86)/SMplayer/mplayer")
+(when is-win32
+  (add-to-list 'exec-path "C:/Program Files (x86)/SMplayer/mplayer"))
+
 (add-to-list 'load-path "~/.emacs.d/lisp")
 
 ;; colors
-(set-frame-font "-outline-Consolas-normal-normal-normal-mono-13-*-*-*-c-*-iso8859-1")
+(when is-win32
+(set-frame-font "-outline-Consolas-normal-normal-normal-mono-13-*-*-*-c-*-iso8859-1"))
+
+;; linux
+(when (and (not is-win32) window-system)
+(set-frame-font "-bitstream-Bitstream Charter-normal-normal-normal-*-18-*-*-*-*-0-iso10646-1"))
+
 
 (require 'color-theme)
                                         ;(autoload 'color-theme "color-theme" "Color Theme " t nil)
