@@ -35,7 +35,7 @@
 
 ;; linux
 (when (and (not is-win32) window-system)
-(set-frame-font "-bitstream-Bitstream Charter-normal-normal-normal-*-18-*-*-*-*-0-iso10646-1"))
+(set-frame-font "-unknown-DejaVu Sans Mono-normal-normal-normal-*-13-*-*-*-m-0-iso10646-1"))
 
 
 (require 'color-theme)
