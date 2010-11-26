@@ -1,22 +1,12 @@
 set nocompatible
-"set t_Co=256
-" if has("gui_running")  
-" 	set guifont=ProFontWindows:h8:cANSI
-"     let moria_style='black'
-" 	colors moria
-" else
-" 	colors darkblue
-" endif
-
 if has("gui_running")
   set guioptions-=T
   set guioptions-=m
   set guioptions-=l
   set guioptions-=r
   set guioptions-=b
-  "set t_Co=256
   set guifont=Consolas:h10:cANSI
-  colorscheme herald
+  colorscheme molokai
   set nu
   au guienter * simalt ~x
 else
@@ -76,7 +66,7 @@ map <leader>e :e!~/_vimrc<cr>
 
 autocmd! bufwritepost vimrc source ~/_vimrc
 
-autocmd BufNewFile * silent! 0r $HOME/templates/%:e.tpl
+autocmd BufNewFile * silent! 0r $HOME/vimfiles/templates/%:e.tpl
 " Python Omni completion support
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 map <F12> <ESC>:Tlist<CR><C-W>h<C-W>s:NERDTree<CR>:set nonu<CR><C-W>l
