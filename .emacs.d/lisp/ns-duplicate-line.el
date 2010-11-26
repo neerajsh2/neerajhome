@@ -56,5 +56,5 @@ This command can be interleaved with \\[duplicate-previous-line]."
   (interactive "p")
   (ns-duplicate-line n 1))
 
-(provide 'ns-dublicate-line)
-;;; dublicate-line.el ends here.
+(provide 'ns-duplicate-line)
+;;; duplicate-line.el ends here.
