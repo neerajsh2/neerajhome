@@ -15,7 +15,6 @@ if has("gui_running")
   set guioptions-=r
   set guioptions-=b
   "set t_Co=256
-  set guifont=Consolas:h10:cANSI
   colorscheme herald
   set nu
   au guienter * simalt ~x
@@ -23,6 +22,12 @@ else
   colorscheme elflord
   set background=dark
   set nonu
+endif
+
+let $VIMHOME=$HOME."/.vim"
+if has('win32') || has ('win64')
+  set guifont=Consolas:h10:cANSI
+"else
 endif
 
 set showcmd
