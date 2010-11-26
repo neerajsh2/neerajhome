@@ -8,6 +8,7 @@
 "alias-path" {
  "src" = "d:\\src\\"
 }
+"auto" = "0"
 "company" = "Microsoft"
 "cygwin" {
  "ext-char-set" = "1"
@@ -34,6 +35,9 @@
 "edituser" = "0"
 "emulate" = "emacs"
 "exact" = "0"
+"fhook" {
+ "dirlst" = "ghmopn"
+}
 "file-mask" = "\CH*.c,*.cc,*.cpp\CH*.h,*.hpp,*.def\CHImakefile,Makefile*\CH*.txt,*.doc,*.log\CH*.emf,*.eaf,*.erf,*.etf,*.ehf\CH*.bat,*.sys,*.sh,*.csh,*shrc,.login\CH*.tk,*.tcl\CH*.[0-9],*.tni\CH"
 "file-type" = "\CHC/C++ Source\CHC/C++ Header\CHMakefile\CHText file\CHEmacs File\CHShell Script\CHTK/TCL\CHNroff file\CH"
 "freebsd" {
@@ -60,7 +64,8 @@
  "scheme" = "schemebc"
  "scroll-bar" = "0x1be"
 }
-"main-menu" = "1"
+"magic" = "0"
+"main-menu" = "0"
 "mouse" {
  "C-mouse-drop-1" = "mouse-osd-multi"
  "C-mouse-pick-1"
@@ -94,17 +99,26 @@
  "scroll-bar" = "0x1be"
 }
 "system" = "359186"
+"toolbar" {
+ "size" = "|20|15|20|15|"
+ "tool-buff" = "\CH*item-list*\CH*directory*\CH"
+ "tool-cmd" = "\CHitem-list-create\CHtoolbar-dir-list-create\CH"
+ "tool-file" = "\CHitemlist\CHtoolstd\CH"
+ "tool-flag" = "\CH2232335\CH4097\CH"
+ "tool-name" = "\CHItems\CHDir Tree\CH"
+ "tool-size" = "\CH38\CH37\CH"
+}
 "user-name" = "Neeraj Sharma"
 "win32" {
  "blink" = "13107800"
  "char-set" = "Win-ANSI"
  "ext-char-set" = "1"
  "file-ignore" = "~ ./"
- "font" = "Envy Code R VS"
+ "font" = "Consolas"
  "font-depth" = "-13"
  "font-weight" = "4"
  "font-width" = "0"
- "scheme" = "schemege"
+ "scheme" = "schemetb"
  "scroll-bar" = "0x1be"
  "system" = "482066"
 }

@@ -1,3 +1,4 @@
+
 ;;; init.el - Startup of the world
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
@@ -24,6 +25,7 @@
 (add-to-list 'load-path dotfiles-dir)
 (add-to-list 'load-path "~/.emacs.d")
 (add-to-list 'load-path "~/.emacs.d/emms-latest/lisp/")
+(add-to-list 'load-path "~/.emacs.d/magit/")
 (when is-win32
   (add-to-list 'exec-path "C:/Program Files (x86)/SMplayer/mplayer"))
 
@@ -35,7 +37,7 @@
 
 ;; linux
 (when (and (not is-win32) window-system)
-(set-frame-font "-bitstream-Bitstream Charter-normal-normal-normal-*-18-*-*-*-*-0-iso10646-1"))
+(set-frame-font "-unknown-DejaVu Sans Mono-normal-normal-normal-*-13-*-*-*-m-0-iso10646-1"))
 
 
 (require 'color-theme)
@@ -102,8 +104,23 @@
 
 (add-to-list 'load-path "~/.emacs.d/")
 (require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d//ac-dict")
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
 (ac-config-default)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; C/C++
+
+(add-hook 'c-mode-hook
+          (lambda ()
+            (unless (file-exists-p "Makefile")
+              (set (make-local-variable 'compile-command)
+                   (let ((file (file-name-nondirectory buffer-file-name)))
+                     (format "%s -c -o %s.o %s %s %s"
+                             (or (getenv "CC") "g++")
+                             (file-name-sans-extension file)
+                             (or (getenv "CPPFLAGS") "-DDEBUG=9")
+                             (or (getenv "CFLAGS") "-ansi -pedantic -Wall -g")
+                             file))))))
 
 
    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -554,5 +571,6 @@
 (defun region-length () "Length of a region"
   (interactive)
   (message (format "%d" (- (region-end) (region-beginning)))))
+
 
 (message ".emacs loaded. Let's get coding..!!!")

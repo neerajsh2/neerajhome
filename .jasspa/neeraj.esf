@@ -1,4 +1,4 @@
-enfs1CABADAFBBACCCBAEFBIFAvars
+enfs1CABADCJBBCGFACCGFEHAHvars
 platformwin32
 system490290
 update1
@@ -9,10 +9,10 @@
 w-sbar446
 c-sbar446
 w-framew80
-c-framew125
+c-framew120
 w-framed50
-c-framed69
-enfs1CABADAFBBACCCBAEFBIFAhist
+c-framed57
+enfs1CABADCJBBCGFACCGFEHAHhist
 0Microsoft
 0Microsoft Corp.
 0*
@@ -23,16 +23,16 @@
 0schemebc
 0dark background
 0dark
-0
 0schemech
 0neeraj
 0neeraj *
 0-ir neeraj *
-0Envy Code R VS
 0src
 0d:\src\
 0General Electric Black
 0schemege
+0Envy Code R VS
+0
 1
 1
 1
@@ -51,8 +51,8 @@
 1
 1
 1
-1
-1
+1*scratch*
+1regexp.c
 2
 2
 2
@@ -62,37 +62,37 @@
 2
 2
 2
-2
-2
-2
-2
-2
-2
-2user-setup
 2help
 2ml-write
 2$buffer-scheme
 2grep
-3c:/src/SyndicationPartnerPortalService/PartnerDataStorage/PartnerStorage.cs
-3c:/src/SyndicationPartnerPortalService/PartnerDataStorage/ISubscriptionRepository.cs
-3c:/src/SyndicationPartnerPortalService/PartnerDataStorage/SubscriptionRepository.cs
-3c:/src/SyndicationPartnerPortalService/PartnerDataStorage/SubscriptionStorage.cs
-3c:/src/SyndicationPartnerPortalService/PartnerDataStorage/CustomerStorage.cs
-3c:/src/SyndicationPartnerPortalService/PartnerDataStorage/PartnerRepository.cs
-3c:/src/SyndicationPartnerPortalService/Database/CreateDatabaseScript.sql
-3c:/src/MyRouter/MyRouter/Service1.cs
-3c:/src/
+2srrc
+2src
+2toolbar
+2set-up
+2popup-window
+2display-main-menu
+2user-setup
 3c:/src/MediaTest/MediaPlayerTest/Form1.cs
 3c:/Users/neerajsh/
-3d:/src/
 3d:/src/pvt/cs/TestProject/Class1.cs
 3d:/src/pvt/c/
 3d:/src/pvt/c/WordCounter/WordCounter/list.cpp
 3c:/home/.emacs.d/init.el
 3d:/src/pvt/c/WordCounter/WordCounter/Set.h
-3src
 3d:/src/pvt/c/WordCounter/wordCounter/Set.h
 3c:/src/c/gvimfullscreen/gvimfullscreen_win32/gvimfullscreen.c
+3c:/src/c/simple/src
+3src
+3d:/src/
+3d:/src/kernel/fork.c
+3c:/src/c/simple/simple.c
+3d:/src/pvt/c/re/re2/regexp.c
+3d:/src/pvt/c/re/re2/regexp.h
+3d:/src/pvt/c/re/re2/regmagic.h
+3d:/src/pvt/c/re/re2/regexp_int.h
+3d:/src/pvt/c/re/re2/memory.c
+3d:/src/pvt/c/re/re2/regexp.3
 4
 4
 4
@@ -113,45 +113,100 @@
 4ing
 4vang
 4icici
-enfs1CABADAFBBACCCBAEFBIFAbuff
-enfs1CABADAFBBACCCBAEFBIFAkill
-ais 
-enfs1CABADAFBBACCCBAEFBIFAkill
- 
-
-enfs1CABADAFBBACCCBAEFBIFAkill
-
-
-
-enfs1CABADAFBBACCCBAEFBIFAkill
-The
-enfs1CABADAFBBACCCBAEFBIFAkill
-namespace
-enfs1CABADAFBBACCCBAEFBIFAkill
-       c
-enfs1CABADAFBBACCCBAEFBIFAkill
-./GenerateAndDeployPackage.ps1 -Out d:\out\uat7 -Env uat7  -Build "D:\sd\ocp-synd\target\debug\SyndicationPartnerPortal" -Sdkbin "d:\sd\ocp-synd\public\ext\AzureSDK\v1.0\bin"
-enfs1CABADAFBBACCCBAEFBIFAkill
-j3uAQW1xvrX5MUT6n5vsTIv3esVIrJ8klwui8uXn1lWzShpkxSSmZHURsW2B1rqTe3C86AHo4
-enfs1CABADAFBBACCCBAEFBIFAkill
-			System.R
-enfs1CABADAFBBACCCBAEFBIFAkill
-k
-enfs1CABADAFBBACCCBAEFBIFAkill
-m
-enfs1CABADAFBBACCCBAEFBIFAkill
-jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-enfs1CABADAFBBACCCBAEFBIFAkill
-    list->head = l
-
-enfs1CABADAFBBACCCBAEFBIFAkill
-;;; init.el - Startup of the world
-enfs1CABADAFBBACCCBAEFBIFAkill
-mpwalyd2007
-enfs1CABADAFBBACCCBAEFBIFAkill
+enfs1CABADCJBBCGFACCGFEHAHbuff
+c:/Users/neerajsh/Documents/ritu_latest.txt~
+ritu_latest.txt~120400aBcfIJlTUW
+
+enfs1CABADCJBBCGFACCGFEHAHkill
    	return F
-enfs1CABADAFBBACCCBAEFBIFAwin
-017948
-1001794810000*scratch*
-enfs1CABADAFBBACCCBAEFBIFAend
+enfs1CABADCJBBCGFACCGFEHAHkill
+herald
+enfs1CABADCJBBCGFACCGFEHAHkill
+    p->state = TASK
+
+enfs1CABADCJBBCGFACCGFEHAHkill
+main
+
+enfs1CABADCJBBCGFACCGFEHAHkill
+while
+enfs1CABADCJBBCGFACCGFEHAHkill
+ile
+enfs1CABADCJBBCGFACCGFEHAHkill
+newlisthead = ...
+
+while(left->next && right->next)
+{
+
+if left-> data < right-> data
+left=lieft->next
+
+else if right->data < left->data
+right=right->next
+
+else if(left->data=right->data)
+ newnode = left->data
+ left = left->next;
+ rigth= right->next;
+ }
+
+}
+
+
+1 -> 2 - 3 -> /0
+
+3-> 2 -> 1 -> /0
+
+curr = head
+prev = NULL
+
+while(curr != NULL)
+{
+    next = curr->next;
+    curr->next = prev;
+    prev = curr;
+    curr = next;
+    }
+    
+*head = prev;
+
+recursive
+// base case
+head == NULL
+return NULL
+
+// curr - head;
+ next = Recursive(head->next);
+ if(next != NULL)
+ next->next = head;
+return head;
+
+enfs1CABADCJBBCGFACCGFEHAHkill
+set
+enfs1CABADCJBBCGFACCGFEHAHkill
+set.insert(
+enfs1CABADCJBBCGFACCGFEHAHkill
+Designed and developed
+enfs1CABADCJBBCGFACCGFEHAHkill
+Resume 
+
+enfs1CABADCJBBCGFACCGFEHAHkill
+board[i-2, j+1] = 0;
+enfs1CABADCJBBCGFACCGFEHAHkill
+walk (board, i+1, j-2)
+board[i+1, j-2] = 0;
+walk (board, i+1, j-2)
+board[i+1, j-2] = 0;
+
+enfs1CABADCJBBCGFACCGFEHAHkill
+walk (board, i+1, j-2)
+board[i+1, j-2] = 0;
+enfs1CABADCJBBCGFACCGFEHAHkill
+    return
+
+enfs1CABADCJBBCGFACCGFEHAHkill
+board[i][0] = 1
+enfs1CABADCJBBCGFACCGFEHAHwin
+007948
+1000794812040095ritu_latest.txt~
+enfs1CABADCJBBCGFACCGFEHAHend
 
