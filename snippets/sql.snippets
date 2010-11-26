@@ -1,0 +1,44 @@
+snippet select 
+	SELECT * FROM ${1:TableName}
+
+snippet where
+		WHERE ${2:Clause}
+
+snippet proc
+
+	IF EXISTS (SELECT  * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'dbo.$1') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+		DROP PROCEDURE dbo.$1
+	GO
+
+	CREATE PROCEDURE dbo.${1:Name}
+	AS
+	
+	/*      
+	**      
+	** NAME: $1
+	**      
+	** DESC: ${2} 
+	**      
+	** DATE: 
+	** AUTH:  neerajsh
+	** NOTE:        
+	**       
+	**********************************************************************      
+	** HISTORY:        
+	**********************************************************************      
+	*/  
+		
+	SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED
+	SET NOCOUNT ON
+	
+	${3}
+
+snippet param
+	///<param name="${1: Name}">${2}</param>$3
+
+snippet prop
+	///<summary>
+	/// $1
+	///<summary>
+	public ${2:Type} ${1:Name} {get; set;} ${3}
+
