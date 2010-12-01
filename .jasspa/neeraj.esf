@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 enfs1CABADDBBBCIACBDAFGHBGvars
+=======
+enfs1CABADCJBBCGFACCGFEHAHvars
+>>>>>>> origin/master
 platformwin32
 system490290
 update1
@@ -8,11 +12,19 @@
 c-scroll1
 w-sbar446
 c-sbar446
+<<<<<<< HEAD
 w-framew274
 c-framew120
 w-framed76
 c-framed57
 enfs1CABADDBBBCIACBDAFGHBGhist
+=======
+w-framew80
+c-framew120
+w-framed50
+c-framed57
+enfs1CABADCJBBCGFACCGFEHAHhist
+>>>>>>> origin/master
 0Microsoft
 0Microsoft Corp.
 0*
@@ -113,6 +125,7 @@
 4ing
 4vang
 4icici
+<<<<<<< HEAD
 enfs1CABADDBBBCIACBDAFGHBGbuff
 c:/Temp/TestSuites.xml
 TestSuites.xml<1>16000aBcflTtU
@@ -138,6 +151,27 @@ while
 enfs1CABADDBBBCIACBDAFGHBGkill
 ile
 enfs1CABADDBBBCIACBDAFGHBGkill
+=======
+enfs1CABADCJBBCGFACCGFEHAHbuff
+c:/Users/neerajsh/Documents/ritu_latest.txt~
+ritu_latest.txt~120400aBcfIJlTUW
+
+enfs1CABADCJBBCGFACCGFEHAHkill
+   	return F
+enfs1CABADCJBBCGFACCGFEHAHkill
+herald
+enfs1CABADCJBBCGFACCGFEHAHkill
+    p->state = TASK
+
+enfs1CABADCJBBCGFACCGFEHAHkill
+main
+
+enfs1CABADCJBBCGFACCGFEHAHkill
+while
+enfs1CABADCJBBCGFACCGFEHAHkill
+ile
+enfs1CABADCJBBCGFACCGFEHAHkill
+>>>>>>> origin/master
 newlisthead = ...
 
 while(left->next && right->next)
@@ -186,6 +220,7 @@ return NULL
  next->next = head;
 return head;
 
+<<<<<<< HEAD
 enfs1CABADDBBBCIACBDAFGHBGkill
 set
 enfs1CABADDBBBCIACBDAFGHBGkill
@@ -198,11 +233,26 @@ Resume
 enfs1CABADDBBBCIACBDAFGHBGkill
 board[i-2, j+1] = 0;
 enfs1CABADDBBBCIACBDAFGHBGkill
+=======
+enfs1CABADCJBBCGFACCGFEHAHkill
+set
+enfs1CABADCJBBCGFACCGFEHAHkill
+set.insert(
+enfs1CABADCJBBCGFACCGFEHAHkill
+Designed and developed
+enfs1CABADCJBBCGFACCGFEHAHkill
+Resume 
+
+enfs1CABADCJBBCGFACCGFEHAHkill
+board[i-2, j+1] = 0;
+enfs1CABADCJBBCGFACCGFEHAHkill
+>>>>>>> origin/master
 walk (board, i+1, j-2)
 board[i+1, j-2] = 0;
 walk (board, i+1, j-2)
 board[i+1, j-2] = 0;
 
+<<<<<<< HEAD
 enfs1CABADDBBBCIACBDAFGHBGkill
 walk (board, i+1, j-2)
 board[i+1, j-2] = 0;
@@ -215,4 +265,18 @@ board[i][0] = 1
 0027374
 100027374160000TestSuites.xml<1>
 enfs1CABADDBBBCIACBDAFGHBGend
+=======
+enfs1CABADCJBBCGFACCGFEHAHkill
+walk (board, i+1, j-2)
+board[i+1, j-2] = 0;
+enfs1CABADCJBBCGFACCGFEHAHkill
+    return
+
+enfs1CABADCJBBCGFACCGFEHAHkill
+board[i][0] = 1
+enfs1CABADCJBBCGFACCGFEHAHwin
+007948
+1000794812040095ritu_latest.txt~
+enfs1CABADCJBBCGFACCGFEHAHend
+>>>>>>> origin/master
 
