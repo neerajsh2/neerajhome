@@ -32,7 +32,7 @@
 
 ;; colors
 (when is-win32
-(set-frame-fon "-outline-Mensch-normal-normal-normal-mono-13-*-*-*-c-*-iso8859-1"))
+(set-frame-font "-outline-Mensch-normal-normal-normal-mono-13-*-*-*-c-*-iso8859-1"))
 
 ;; linux
 (when (and (not is-win32) window-system)
