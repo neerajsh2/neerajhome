@@ -1,4 +1,3 @@
-
 ;;; init.el - Startup of the world
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
@@ -33,7 +32,7 @@
 
 ;; colors
 (when is-win32
-(set-frame-font "-outline-Consolas-normal-normal-normal-mono-13-*-*-*-c-*-iso8859-1"))
+(set-frame-fon "-outline-Mensch-normal-normal-normal-mono-13-*-*-*-c-*-iso8859-1"))
 
 ;; linux
 (when (and (not is-win32) window-system)
@@ -46,15 +45,13 @@
 (autoload 'color-theme-gruber-darker "color-theme-gruber-darker" "Color Theme Gruber Darker" t nil)
 (autoload 'color-theme-dark-emacs "color-theme-dark-emacs" "Color Theme Dark Emacs" t nil)
 (autoload 'color-theme-subdued "color-theme-subdued" "Color Theme Subdued" t nil)
+(autoload 'color-theme-fruity "color-theme-fruity" "Color Theme Fruity" t nil)
 
 (require 'darkroom-mode)
 
-;;(when window-system)
-;;(w32-fullscreen)
-
 
 (when window-system
-  (color-theme-subdued))
+  (color-theme-fruity))
 
 (set-frame-parameter (selected-frame) 'alpha '(98 97))
 (add-to-list 'default-frame-alist '(alpha 98 97))
@@ -94,9 +91,9 @@
 ;; (ido-mode)
 (require 'lusty-explorer)
 
-                                        ;   (setq viper-mode nil)
-                                        ;   (require 'viper)
-                                        ;   (require 'vimpulse)
+(setq viper-mode nil)
+(require 'viper)
+(require 'vimpulse)
 
 (require 'yasnippet)
 (yas/initialize)
