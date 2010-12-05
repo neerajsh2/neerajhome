@@ -9,7 +9,9 @@
 		(foreground-color . "#ffffff")
 		(background-color . "#111111")
 	)
+
 	(font-lock-string-face ((t (:foreground "#0086d2"))))
+
 	(font-lock-type-face ((t (:foreground "#cdcaa9"))))
 	(font-lock-comment-face ((t (:foreground "#00d2ff"))))
 	(font-lock-variable-name-face ((t (:foreground "#ffffff"))))
@@ -21,4 +23,5 @@
 	(font-lock-doc-string-face ((t (:foreground "#00d2ff"))))
 	(font-lock-builtin-face ((t (:foreground "#ff0086"))))
 	(font-lock-function-name-face ((t (:foreground "#ff0086"))))
-)))
+))
+	        (set-cursor-color "yellow"))

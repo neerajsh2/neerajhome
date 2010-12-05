@@ -1,49 +1,33 @@
-<<<<<<< HEAD
-enfs1CABADDBBBCIACBDAFGHBGvars
-=======
-enfs1CABADCJBBCGFACCGFEHAHvars
->>>>>>> origin/master
+enfs1CABADDHBCAEGCBEIACCDJvars
 platformwin32
 system490290
 update1
 amark0
 kill1
 w-scroll1
-c-scroll1
 w-sbar446
-c-sbar446
-<<<<<<< HEAD
-w-framew274
-c-framew120
-w-framed76
-c-framed57
-enfs1CABADDBBBCIACBDAFGHBGhist
-=======
 w-framew80
-c-framew120
 w-framed50
-c-framed57
-enfs1CABADCJBBCGFACCGFEHAHhist
->>>>>>> origin/master
-0Microsoft
-0Microsoft Corp.
-0*
-0"Neeraj Sahar
-0$USERPATH
-0$USER
-0$buffer-scheme
-0schemebc
-0dark background
-0dark
-0schemech
-0neeraj
-0neeraj *
-0-ir neeraj *
-0src
-0d:\src\
-0General Electric Black
-0schemege
-0Envy Code R VS
+enfs1CABADDHBCAEGCBEIACCDJhist
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
 0
 1
 1
@@ -63,8 +47,8 @@
 1
 1
 1
-1*scratch*
-1regexp.c
+1
+1
 2
 2
 2
@@ -74,37 +58,37 @@
 2
 2
 2
-2help
-2ml-write
-2$buffer-scheme
-2grep
-2srrc
-2src
-2toolbar
-2set-up
-2popup-window
-2display-main-menu
-2user-setup
-3c:/src/MediaTest/MediaPlayerTest/Form1.cs
-3c:/Users/neerajsh/
-3d:/src/pvt/cs/TestProject/Class1.cs
-3d:/src/pvt/c/
-3d:/src/pvt/c/WordCounter/WordCounter/list.cpp
-3c:/home/.emacs.d/init.el
-3d:/src/pvt/c/WordCounter/WordCounter/Set.h
-3d:/src/pvt/c/WordCounter/wordCounter/Set.h
-3c:/src/c/gvimfullscreen/gvimfullscreen_win32/gvimfullscreen.c
-3c:/src/c/simple/src
-3src
-3d:/src/
-3d:/src/kernel/fork.c
-3c:/src/c/simple/simple.c
-3d:/src/pvt/c/re/re2/regexp.c
-3d:/src/pvt/c/re/re2/regexp.h
-3d:/src/pvt/c/re/re2/regmagic.h
-3d:/src/pvt/c/re/re2/regexp_int.h
-3d:/src/pvt/c/re/re2/memory.c
-3d:/src/pvt/c/re/re2/regexp.3
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
 4
 4
 4
@@ -112,171 +96,57 @@
 4
 4
 4
-4MosiSource
-4CreateS
-4UpdatePro
-4MOSIGet
-4Get
-4GetAllSyndicationPartners
-4GetMosiActionByRequestId
-4GetCustomerById
-4PartnerEntities.
 4
-4ing
-4vang
-4icici
-<<<<<<< HEAD
-enfs1CABADDBBBCIACBDAFGHBGbuff
-c:/Temp/TestSuites.xml
-TestSuites.xml<1>16000aBcflTtU
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+enfs1CABADDHBCAEGCBEIACCDJbuff
+d:/src/sys/db/HeapFile/makefile
+makefile94000aBcfItU
 
-c:/Users/neerajsh/Documents/ritu_latest.txt~
-ritu_latest.txt~120400aBcfIJlTUW
-
-//neeraj/D$/sd/ocp-main/private/Dev/V1/SyndicationInterface/SyndicationPartnerPortalService/MospopMonitoringTests/KittyHawkConfig/Data/MOSPOP/TestSuites.xml
-TestSuites.xml17000aBcflnTtU
-
-enfs1CABADDBBBCIACBDAFGHBGkill
-   	return F
-enfs1CABADDBBBCIACBDAFGHBGkill
-herald
-enfs1CABADDBBBCIACBDAFGHBGkill
-    p->state = TASK
-
-enfs1CABADDBBBCIACBDAFGHBGkill
-main
-
-enfs1CABADDBBBCIACBDAFGHBGkill
-while
-enfs1CABADDBBBCIACBDAFGHBGkill
-ile
-enfs1CABADDBBBCIACBDAFGHBGkill
-=======
-enfs1CABADCJBBCGFACCGFEHAHbuff
-c:/Users/neerajsh/Documents/ritu_latest.txt~
-ritu_latest.txt~120400aBcfIJlTUW
-
-enfs1CABADCJBBCGFACCGFEHAHkill
-   	return F
-enfs1CABADCJBBCGFACCGFEHAHkill
-herald
-enfs1CABADCJBBCGFACCGFEHAHkill
-    p->state = TASK
-
-enfs1CABADCJBBCGFACCGFEHAHkill
-main
-
-enfs1CABADCJBBCGFACCGFEHAHkill
-while
-enfs1CABADCJBBCGFACCGFEHAHkill
-ile
-enfs1CABADCJBBCGFACCGFEHAHkill
->>>>>>> origin/master
-newlisthead = ...
-
-while(left->next && right->next)
-{
-
-if left-> data < right-> data
-left=lieft->next
-
-else if right->data < left->data
-right=right->next
-
-else if(left->data=right->data)
- newnode = left->data
- left = left->next;
- rigth= right->next;
- }
-
-}
-
-
-1 -> 2 - 3 -> /0
-
-3-> 2 -> 1 -> /0
-
-curr = head
-prev = NULL
-
-while(curr != NULL)
-{
-    next = curr->next;
-    curr->next = prev;
-    prev = curr;
-    curr = next;
-    }
-    
-*head = prev;
-
-recursive
-// base case
-head == NULL
-return NULL
-
-// curr - head;
- next = Recursive(head->next);
- if(next != NULL)
- next->next = head;
-return head;
-
-<<<<<<< HEAD
-enfs1CABADDBBBCIACBDAFGHBGkill
-set
-enfs1CABADDBBBCIACBDAFGHBGkill
-set.insert(
-enfs1CABADDBBBCIACBDAFGHBGkill
-Designed and developed
-enfs1CABADDBBBCIACBDAFGHBGkill
-Resume 
-
-enfs1CABADDBBBCIACBDAFGHBGkill
-board[i-2, j+1] = 0;
-enfs1CABADDBBBCIACBDAFGHBGkill
-=======
-enfs1CABADCJBBCGFACCGFEHAHkill
-set
-enfs1CABADCJBBCGFACCGFEHAHkill
-set.insert(
-enfs1CABADCJBBCGFACCGFEHAHkill
-Designed and developed
-enfs1CABADCJBBCGFACCGFEHAHkill
-Resume 
-
-enfs1CABADCJBBCGFACCGFEHAHkill
-board[i-2, j+1] = 0;
-enfs1CABADCJBBCGFACCGFEHAHkill
->>>>>>> origin/master
-walk (board, i+1, j-2)
-board[i+1, j-2] = 0;
-walk (board, i+1, j-2)
-board[i+1, j-2] = 0;
-
-<<<<<<< HEAD
-enfs1CABADDBBBCIACBDAFGHBGkill
-walk (board, i+1, j-2)
-board[i+1, j-2] = 0;
-enfs1CABADDBBBCIACBDAFGHBGkill
-    return
-
-enfs1CABADDBBBCIACBDAFGHBGkill
-board[i][0] = 1
-enfs1CABADDBBBCIACBDAFGHBGwin
-0027374
-100027374160000TestSuites.xml<1>
-enfs1CABADDBBBCIACBDAFGHBGend
-=======
-enfs1CABADCJBBCGFACCGFEHAHkill
-walk (board, i+1, j-2)
-board[i+1, j-2] = 0;
-enfs1CABADCJBBCGFACCGFEHAHkill
-    return
-
-enfs1CABADCJBBCGFACCGFEHAHkill
-board[i][0] = 1
-enfs1CABADCJBBCGFACCGFEHAHwin
+enfs1CABADDHBCAEGCBEIACCDJkill
+5
+enfs1CABADDHBCAEGCBEIACCDJkill
+5
+enfs1CABADDHBCAEGCBEIACCDJkill
+5
+enfs1CABADDHBCAEGCBEIACCDJkill
+5
+enfs1CABADDHBCAEGCBEIACCDJkill
+5
+enfs1CABADDHBCAEGCBEIACCDJkill
+5
+enfs1CABADDHBCAEGCBEIACCDJkill
+5
+enfs1CABADDHBCAEGCBEIACCDJkill
+5
+enfs1CABADDHBCAEGCBEIACCDJkill
+5
+enfs1CABADDHBCAEGCBEIACCDJkill
+5
+enfs1CABADDHBCAEGCBEIACCDJkill
+5
+enfs1CABADDHBCAEGCBEIACCDJkill
+5
+enfs1CABADDHBCAEGCBEIACCDJkill
+5
+enfs1CABADDHBCAEGCBEIACCDJkill
+5
+enfs1CABADDHBCAEGCBEIACCDJkill
+5
+enfs1CABADDHBCAEGCBEIACCDJkill
+5
+enfs1CABADDHBCAEGCBEIACCDJwin
 007948
-1000794812040095ritu_latest.txt~
-enfs1CABADCJBBCGFACCGFEHAHend
->>>>>>> origin/master
+100079489400048makefile
+enfs1CABADDHBCAEGCBEIACCDJend
 

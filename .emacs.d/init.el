@@ -21,6 +21,7 @@
 
 ;;; turn off the 3d formatting for the mode line
 (set-face-attribute 'mode-line nil :box nil)
+(blink-cursor-mode nil)
 
 (add-to-list 'load-path dotfiles-dir)
 (add-to-list 'load-path "~/.emacs.d")
@@ -47,6 +48,9 @@
 (autoload 'color-theme-dark-emacs "color-theme-dark-emacs" "Color Theme Dark Emacs" t nil)
 (autoload 'color-theme-subdued "color-theme-subdued" "Color Theme Subdued" t nil)
 (autoload 'color-theme-fruity "color-theme-fruity" "Color Theme Fruity" t nil)
+(autoload 'color-theme-wombat  "color-theme-wombat" "Color Theme wombat" t nil)
+(autoload 'color-theme-monokai_dark "color-theme-monokai_dark" "Color Theme Monokai-dark" t nil)
+(autoload 'color-theme-eiffel "color-theme-eiffel" "Color Theme Eiffel" t nil)
 
 (require 'darkroom-mode)
 
@@ -89,12 +93,14 @@
 ;; (setq emms-source-list '((emms-directory-tree "C:/users/neerajsh/Music")))
 
 ;; modes
-;; (ido-mode)
-(require 'lusty-explorer)
+(ido-mode 'both)
+(setq ido-enable-flex-matching t)
+
+;;(require 'lusty-explorer)
 
 (setq viper-mode nil)
-(require 'viper)
-(require 'vimpulse)
+;(require 'viper)
+;(require 'vimpulse)
 
 (require 'yasnippet)
 (yas/initialize)
@@ -230,7 +236,8 @@
 (setq visible-bell t)
 
 (fset 'yes-or-no-p 'y-or-n-p)
-
+(setq confirm-nonexistent-file-or-buffer nil)
+(setq kill-buffer-query-functions (remq 'process-kill-buffer-query-function kill-buffer-query-functions))
 (setq major-mode 'text-mode)
 
 (require 'ns-duplicate-line)
@@ -242,6 +249,12 @@
   (server-edit)
   (make-frame-invisible nil t))
 
+(defun ns-delete-last-char-of-line()
+  (interactive)
+  (end-of-line)
+  (backward-delete-char 1)
+  )
+  
 
 (defun select-word ()
   "Select a word under cursor.
@@ -326,11 +339,12 @@
 (global-set-key "\M-J" 'execute-at-char-backward) 
 (global-set-key "\M-k" 'delete-char-forward)      
 (global-set-key "\M-K" 'delete-char-backward)     
-(global-set-key "\M-m" 'mark-to-char-forward)     
-(global-set-key "\M-M" 'mark-to-char-backward)    
+;(global-set-key "\M-m" 'mark-to-char-forward)     
+;(global-set-key "\M-M" 'mark-to-char-backward)    
 (global-set-key "\M-D" 'select-word)
 (global-set-key "\C-\M-f" 'w32-fullscreen)
 (global-set-key "\C-\M-d" 'darkroom-mode)
+(global-set-key "\C-c\C-d" 'ns-delete-last-char-of-line)
                                         ;    (global-set-key (kbd "\C-x\C-c") 'my-done)
 (global-set-key (kbd "\C-c w") 'select-word)
 (global-set-key (kbd "M-p") 'ns-duplicate-previous-line)
@@ -343,14 +357,25 @@
 (global-set-key "\C-x\M-o" 'ns-open-init)
 (global-set-key "\C-c\C-f" 'ns-c-format-buffer)
 
+;; (when (require 'lusty-explorer nil 'noerror)
 
-(when (require 'lusty-explorer nil 'noerror)
+;;   ;; overrride the normal file-opening, buffer switching
+;;   (global-set-key (kbd "C-x C-f") 'lusty-file-explorer)
+;;   (global-set-key (kbd "C-x b")   'lusty-buffer-explorer))
 
-  ;; overrride the normal file-opening, buffer switching
-  (global-set-key (kbd "C-x C-f") 'lusty-file-explorer)
-  (global-set-key (kbd "C-x b")   'lusty-buffer-explorer))
+(global-set-key (kbd "C-x C-f") 'ido-find-file)
+(global-set-key (kbd "C-x C-b") 'ido-switch-buffer)
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(when (require 'smex nil 'noerror)
+  (smex-initialize)
+  (global-set-key (kbd "M-x") 'smex)
+  (global-set-key (kbd "M-X") 'smex-major-mode-commands)
+  (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command))
+
+(when (require 'iedit nil 'noerror)
+(global-set-key (kbd "C-;") 'iedit-mode))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; External Commands Settings
 
 ;; The almighty grep.
@@ -374,6 +399,9 @@
 (define-key global-map [f6] 'hs-show-block)                        ;; F6 - Show Block
 (define-key global-map [f7] 'hs-hide-block)                        ;; F7 - Hide Block
 (define-key global-map [f8] 'toggle-speedbar)                      ;; F8 - Toggle speedbar
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Wrap this around when win32
 (define-key global-map [f9] 'w32-restore-frame)                    ;; F9 - Minimize window
 (define-key global-map [f10] 'w32-maximize-frame)                  ;; F10 - Maximize window
 (define-key global-map [f11] 'vs2emacs)                            ;; F11 - VS2005 2 Unix
