@@ -1,58 +1,65 @@
 ~*
 *~
+\#*
+.bashrc
+.googlecl/*
+.jasspa/*
+.notes
+.smex-items
+*.wlx
 *.exe
-courses\*
- Administrator\*
- News\*
- R
- README
- _.vimrc_backup
- _ipython
- _viminfo
- _viminfo.tmp
- _vimperatorrc
- _vimrc.bak
- _vimrc.wlx
- _vimrc_exdev
- ahk\*
- back\*
- banners\*
- build\*
- cserror.log.wlx
- cthelper.exe.stackdump
- deploy_webpart.bat
- deploy_webpart.bat~
- ebacks\*
- elisp-bak
- firefox\*
- git
- insight
- macros.txt
- macros.txt~
- mplayer\*
- mytasks.html
- mytasks.org
- mytasks.org~
- notes\*
- null
- org\*
- project.todo
- proto.lnk
- semantic.cache
- semantic.cache~
- set-font-and-frame.reg
- set-frame-and-fonts.reg
- snippets\*
- syntax\*
- tagfiles\*
- templates\*
- tempvim\*
- vimperator\*
- vimwiki\*
- vimwiki_html
- yankring_history_v2.txt
- zshrc.bak
-
+.bash_profile
+.gitignore.orig
+courses/*
+Administrator/*
+News/*
+README
+_.vimrc_backup
+_ipython
+_viminfo
+_viminfo.tmp
+_vimperatorrc
+_vimrc.bak
+_vimrc.wlx
+_vimrc_exdev
+ahk/*
+back/*
+banners/*
+build/*
+cserror.log.wlx
+cthelper.exe.stackdump
+deploy_webpart.bat
+deploy_webpart.bat~
+ebacks/*
+elisp-bak
+firefox/*
+git
+insight
+macros.txt
+macros.txt~
+mplayer/*
+mytasks.html
+mytasks.org
+mytasks.org~
+notes/*
+null
+org/*
+project.todo
+proto.lnk
+semantic.cache
+semantic.cache~
+set-font-and-frame.reg
+set-frame-and-fonts.reg
+snippets/*
+syntax/*
+tagfiles/*
+templates/*
+tempvim/*
+vimperator/*
+vimwiki/*
+vimwiki_html
+yankring_history_v2.txt
+zshrc.bak
 .
 .#.emacs.lnk
 ..
@@ -79,10 +86,10 @@ courses\*
 .inputrc
 .lfmrc
 .links
-.mc
-.mutt
+.mc/*
+.mutt/*
 .muttrc
-.notes
+.notes/*
 .profile
 .projects.ede
 .pulse-cookie
