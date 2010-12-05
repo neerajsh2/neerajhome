@@ -98,6 +98,8 @@
 
 ;;(require 'lusty-explorer)
 
+(require 'template)
+(template-initialize)
 (setq viper-mode nil)
 ;(require 'viper)
 ;(require 'vimpulse)
