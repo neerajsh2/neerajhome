@@ -1,5 +1,6 @@
 ~*
 *~
+*.exe
 courses
  Administrator
  News
@@ -57,7 +58,7 @@ courses
 .
 .#.emacs.lnk
 ..
-.VirtualBox
+.VirtualBox/*
 .authinfo.wlx
 .bachrc_orangewithfilesizes
 .bash_history
@@ -102,3 +103,4 @@ courses
 .vim.lnk
 .viminfo
 .emacs.d/ac-comphist.dat
+R/*
