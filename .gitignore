@@ -1,9 +1,9 @@
 ~*
 *~
 *.exe
-courses
- Administrator
- News
+courses\*
+ Administrator\*
+ News\*
  R
  README
  _.vimrc_backup
@@ -14,43 +14,41 @@ courses
  _vimrc.bak
  _vimrc.wlx
  _vimrc_exdev
- ahk
- back
- banners
- build
- courses
+ ahk\*
+ back\*
+ banners\*
+ build\*
  cserror.log.wlx
  cthelper.exe.stackdump
  deploy_webpart.bat
  deploy_webpart.bat~
- ebacks
+ ebacks\*
  elisp-bak
- firefox
+ firefox\*
  git
  insight
  macros.txt
  macros.txt~
- mplayer
+ mplayer\*
  mytasks.html
  mytasks.org
  mytasks.org~
- notes
+ notes\*
  null
- org
- pics
+ org\*
  project.todo
  proto.lnk
  semantic.cache
  semantic.cache~
  set-font-and-frame.reg
  set-frame-and-fonts.reg
- snippets
- syntax
- tagfiles
- templates
- tempvim
- vimperator
- vimwiki
+ snippets\*
+ syntax\*
+ tagfiles\*
+ templates\*
+ tempvim\*
+ vimperator\*
+ vimwiki\*
  vimwiki_html
  yankring_history_v2.txt
  zshrc.bak
